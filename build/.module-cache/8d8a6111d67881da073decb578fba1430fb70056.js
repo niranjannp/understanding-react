@@ -1,0 +1,11 @@
+var ____Class1=React.Component;for(var ____Class1____Key in ____Class1){if(____Class1.hasOwnProperty(____Class1____Key)){Hello[____Class1____Key]=____Class1[____Class1____Key];}}var ____SuperProtoOf____Class1=____Class1===null?null:____Class1.prototype;Hello.prototype=Object.create(____SuperProtoOf____Class1);Hello.prototype.constructor=Hello;Hello.__superConstructor__=____Class1;function Hello(){"use strict";if(____Class1!==null){____Class1.apply(this,arguments);}}
+  Object.defineProperty(Hello.prototype,"render",{writable:true,configurable:true,value:function() {"use strict";
+    debugger;
+    return React.createElement("div", null, "Hello World!")
+  }});
+
+
+console.log('some change');
+React.render(React.createElement(Hello, null), document.body);
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidHJhbnNmb3JtZWQuanMiLCJzb3VyY2VzIjpbbnVsbF0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLCtCQUFBLG1KQUFBLDJFQUFBLDBEQUFBLGtDQUFBLHNDQUFBLGlCQUFBLGFBQUEsd0RBQUEsQ0FBcUM7RUFDbkMsOEZBQU0sQ0FBQSxDQUFDLEdBQUcsYUFBQTtJQUNSLFNBQVM7SUFDVCxPQUFPLG9CQUFBLEtBQUksRUFBQSxJQUFDLEVBQUEsY0FBa0IsQ0FBQTtHQUMvQixFQUFBLENBQUE7QUFDSCxDQUFDOztBQUVELE9BQU8sQ0FBQyxHQUFHLENBQUMsYUFBYSxDQUFDLENBQUM7QUFDM0IsS0FBSyxDQUFDLE1BQU0sQ0FBQyxvQkFBQyxLQUFLLEVBQUEsSUFBRSxDQUFBLEVBQUUsUUFBUSxDQUFDLElBQUksQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiY2xhc3MgSGVsbG8gZXh0ZW5kcyBSZWFjdC5Db21wb25lbnQge1xuICByZW5kZXIoKSB7XG4gICAgZGVidWdnZXI7XG4gICAgcmV0dXJuIDxkaXY+SGVsbG8gV29ybGQhPC9kaXY+XG4gIH1cbn1cblxuY29uc29sZS5sb2coJ3NvbWUgY2hhbmdlJyk7XG5SZWFjdC5yZW5kZXIoPEhlbGxvLz4sIGRvY3VtZW50LmJvZHkpO1xuIl19
