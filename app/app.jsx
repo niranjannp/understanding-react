@@ -13,23 +13,15 @@ class List extends React.Component {
 
   render() {
     console.log("Rendering React Component");
-
     var name = this.state.name;
 
-    var children = [
-      React.createElement("li", {}, "Hello"),
-      React.createElement("li", {}, name)
-    ];
-
-    var listElement = React.createElement("ul", {
-      customProp: "some value",
-      className: "my-list",
-      onClick: (e) => this.handleClick(e)
-    }, children);
-
-    return listElement;
+    return (
+      <ul customProp="some value" className="my-list" onClick={(e) => this.handleClick(e)}>
+        <li key={1}>Hello there!</li>
+        <li key={2}>{name}</li>
+      </ul>
+    )
   }
 }
 
-var listElement = React.createElement(List);
-component = React.render(listElement, document.body);
+component = React.render(<List/>, document.body);

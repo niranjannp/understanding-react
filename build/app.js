@@ -1,10 +1,27 @@
-reactElement = (
-  React.createElement("ul", null, 
-    React.createElement("li", {key: 1}, "one"), 
-    React.createElement("li", {key: 2}, "two")
-  )
-);
+var ____Class0=React.Component;for(var ____Class0____Key in ____Class0){if(____Class0.hasOwnProperty(____Class0____Key)){List[____Class0____Key]=____Class0[____Class0____Key];}}var ____SuperProtoOf____Class0=____Class0===null?null:____Class0.prototype;List.prototype=Object.create(____SuperProtoOf____Class0);List.prototype.constructor=List;List.__superConstructor__=____Class0;
+  function List(props) {"use strict";
+    this.state = {name: 'World'};
+  }
 
-reactComponent = React.render(reactElement, document.body);
+  Object.defineProperty(List.prototype,"handleClick",{writable:true,configurable:true,value:function(e) {"use strict";
+    console.log(e);
+  }});
 
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidHJhbnNmb3JtZWQuanMiLCJzb3VyY2VzIjpbbnVsbF0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLFlBQVk7RUFDVixvQkFBQSxJQUFHLEVBQUEsSUFBQyxFQUFBO0lBQ0Ysb0JBQUEsSUFBRyxFQUFBLENBQUEsQ0FBQyxHQUFBLEVBQUcsQ0FBRSxDQUFHLENBQUEsRUFBQSxLQUFRLENBQUEsRUFBQTtJQUNwQixvQkFBQSxJQUFHLEVBQUEsQ0FBQSxDQUFDLEdBQUEsRUFBRyxDQUFFLENBQUcsQ0FBQSxFQUFBLEtBQVEsQ0FBQTtFQUNqQixDQUFBO0FBQ1AsQ0FBQyxDQUFDOztBQUVGLGNBQWMsR0FBRyxLQUFLLENBQUMsTUFBTSxDQUFDLFlBQVksRUFBRSxRQUFRLENBQUMsSUFBSSxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJyZWFjdEVsZW1lbnQgPSAoXG4gIDx1bD5cbiAgICA8bGkga2V5PXsxfT5vbmU8L2xpPlxuICAgIDxsaSBrZXk9ezJ9PnR3bzwvbGk+XG4gIDwvdWw+XG4pO1xuXG5yZWFjdENvbXBvbmVudCA9IFJlYWN0LnJlbmRlcihyZWFjdEVsZW1lbnQsIGRvY3VtZW50LmJvZHkpO1xuIl19
+  Object.defineProperty(List.prototype,"componentDidMount",{writable:true,configurable:true,value:function() {"use strict";
+    console.log("componentDidMount");
+  }});
+
+  Object.defineProperty(List.prototype,"render",{writable:true,configurable:true,value:function() {"use strict";
+    console.log("Rendering React Component");
+    var name = this.state.name;
+
+    return (
+      React.createElement("ul", {customProp: "some value", className: "my-list", onClick: function(e)  {return this.handleClick(e);}.bind(this)}, 
+        React.createElement("li", {key: 1}, "Hello there!"), 
+        React.createElement("li", {key: 2}, name)
+      )
+    )
+  }});
+
+
+component = React.render(React.createElement(List, null), document.body);
